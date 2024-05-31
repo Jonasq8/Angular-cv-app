@@ -1,25 +1,26 @@
-    <mat-toolbar>
+    <mat-toolbar color="primary">
         <button mat-button> HOME </button>
         <button mat-button> CV </button>
         <button mat-button> COVERLETTER </button>
     </mat-toolbar>
 
-  
+  <div class="projectCollector">
+
+
+  </div>
         
+    <div class="cvColector">
+        <div class="row">
 
-    <div class="row">
-        <div class="columQualification">
-            <app-qualification> </app-qualification>
+            <div class="columExperience">
+                <app-profile-intro style="margin:10px"> </app-profile-intro>
+                <app-experience class="experience"> </app-experience>
+            </div>
+            <div class="columQualification">
+                <app-qualification style="margin:10px"> </app-qualification>
+            </div>
         </div>
-        <div class="profilCard">
-            <app-profile-intro> </app-profile-intro>
-        </div>
-        <div class="columExperience">
-            <app-experience class="experience" > </app-experience>
-        </div>
-
     </div>
-
 
 
 

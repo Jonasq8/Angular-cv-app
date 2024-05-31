@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { QualificationService } from '../utils/service/qualification.service';
+import { Qualification } from '../utils/models/Qualification';
 
 
 @Component({
@@ -8,17 +9,25 @@ import { QualificationService } from '../utils/service/qualification.service';
   styleUrl: './qualification.component.css'
 })
 export class QualificationComponent {
-
-
-
-  qualifiations: string[] = []
+  public qualifiations: Qualification[] = []
+ public service
+  public isLoading: boolean = true; // Initial loading state
+ 
 
   constructor(qualificationsService : QualificationService) {
-    this.qualifiations = qualificationsService.getQualifications()
+    this.service = qualificationsService
   }
 
-  public getQualification() {
+  async ngOnInit() {
+    try {
+      this.qualifiations = await this.service.getQualifications()
+      this.isLoading = false;
+    } catch (error) {
+      console.error("Error fetching experiences", error);
+      this.isLoading = false;
+    }
     
+
   }
 
 

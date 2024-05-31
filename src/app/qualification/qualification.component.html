@@ -1,8 +1,16 @@
 
 
-<app-qualification-card> </app-qualification-card>
 
 
+<div *ngIf="isLoading">
+    <!-- Optional: Add a loading indicator or message here -->
+    <p>Loading...</p>
+</div>
+<div *ngIf="!isLoading">
+    <div *ngFor="let qualifiation of qualifiations">
+        <app-qualification-card class="qualificationCard" [qualifiation]="qualifiation"> </app-qualification-card>
+    </div>
+</div>
 
 
 

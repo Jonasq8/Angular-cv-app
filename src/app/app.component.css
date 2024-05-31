@@ -1,24 +1,25 @@
-.qualification {
-  min-width: 100%;
+
+.cvColector {
+    float: right;
+  width:60%;
+
 }
 
-.columExperience{
-    padding-left: 300px;
-    margin: 25px;
-    float: left;
-    width: 50%;
+
+
+.columExperience {
+  margin: 25px;
+  float:left;
+  width: 40%;
+
 }
 .columQualification {
   margin: 25px;
-  float: right;
+  float: left;
   width: 25%;
+
 }
 
-.profilCard {
-  padding-left: 300px;
-  margin: 25px;
-  float: left;
-  width: 50%;
-}
+
 
 

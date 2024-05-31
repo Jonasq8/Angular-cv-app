@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Qualification } from '../../utils/models/Qualification';
 
 @Component({
   selector: 'app-qualification-card',
@@ -6,6 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './qualification-card.component.css'
 })
 export class QualificationCardComponent {
-  title = ""
-  text = ""
+  @Input() public qualifiation : any ; 
 }

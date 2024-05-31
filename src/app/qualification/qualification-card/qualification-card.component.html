@@ -1,14 +1,14 @@
 
-
+<div *ngIf="qualifiation"> </div>
 <mat-card class="qualificationCard">
     <mat-card-header>
-        <mat-card-title>Python</mat-card-title>
-        <mat-card-subtitle>Exprincce</mat-card-subtitle>
+        <mat-card-title>{{qualifiation.title}}</mat-card-title>
+        <mat-card-subtitle>Qualifiation: </mat-card-subtitle>
     </mat-card-header>
 
     <mat-card-content>
         <p>
-            I am the best at Python
+            {{qualifiation.text}}
         </p>
     </mat-card-content>
     <mat-card-actions>

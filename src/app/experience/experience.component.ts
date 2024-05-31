@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component,} from '@angular/core';
 import { Experience } from '../utils/models/Experience';
 import { ExperienceService } from '../utils/service/experience.service';
-import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-experience',

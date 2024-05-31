@@ -15,7 +15,8 @@ export class ExperienceService {
 
   async getExperiences(): Promise<Experience[]> {
     const csvFilePath = path.resolve('C:\\Users\\jonas\\source\\repos\\AngularCV\\angular-cv-app\\src\\assets\\experince.csv');
-    const headers = ["title", 'text'];
+    
+    const headers = ["title", 'text',"picture"];
 
     const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
 
@@ -33,19 +34,7 @@ export class ExperienceService {
         }
       });
     });
-     
-      
-    
-    
-   
 
-
-
-
-    //let KubenManagement = new Experience('KubenManagement',"JEG VAR SEJ")
-    //let AmphiSystems = new Experience('wd',"wd")
-
-    //return [KubenManagement, AmphiSystems]
   }
 
 }
