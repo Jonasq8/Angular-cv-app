@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\experience",
+    "\\src\\app\\experience\\expericence-card",
+    "\\src\\app\\qualification",
+    "\\src\\app\\qualification\\qualification-card",
+    "\\src\\app\\utils",
+    "\\src\\app\\utils\\models",
+    "\\src\\app\\utils\\service",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\utils\\service\\experience.service.ts",
+  "PreviewInSolutionExplorer": false
+}

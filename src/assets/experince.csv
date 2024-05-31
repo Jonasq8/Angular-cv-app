@@ -1,0 +1,18 @@
+title;text
+ Datamatiker - UCN, Aalborg;"Jeg bestod den afsluttende eksamen med 10 og har et gennemsnit på 11,33.
+ Uddannelsen giver kerne kompetencer til udviklingen af software, med fokus på
+ kodningssprogene Java og C#. Hertil har jeg lært om forskellige udviklingsmetoder
+ f.eks. SCRUM og unified process. Desuden har jeg modtaget undervisning i
+ teknologier som MSSQL og ASP.Net, som giver mulighed for at lave distribueret
+ systemer. Mit afsluttende projekt var et distribueret system som gav rådgivningen
+ til læger og sygeplejer vedrørene patienters blodsukker. Systemet bestod af en
+ Angluar front-end, en ASP.Net backend og en MSSQL server"
+"Studiemedhjælper - kvalitet og digitalisering - Kubenmanagement ,
+ Aalborg";"Hos Kubenmanagement arbejdede jeg med JavaScript til Adobe reader. Til at
+ hjælpe med automatiseringen af tekst input i standard dokumenter.
+ Desuden lavede jeg et C# program som kunne scrape indholdet af flere Excel
+ dokumenter i en mappe og generer en PowerBI Report."
+Studentermedhjælper - Amphi Systems A/S, Aalborg;"Jeg fik til opgave at lave opsætnings Images til Windows tablets. Hertil brugte jeg
+ PowerShell Scripts og WinPE som installerede den ønskede version af Windows,
+ drivers, certifikater og applikationer. Disse tablets skulle bruges til Præhospitals
+ patients journal (PPJ) som benyttes i landets ambulancer."

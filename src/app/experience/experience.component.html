@@ -1,0 +1,23 @@
+<!-- <div class="experienceCard">
+<app-expericence-card></app-expericence-card>
+</div>
+
+<div class="experienceCard">
+<app-expericence-card></app-expericence-card>
+</div> -->
+
+<div *ngIf="isLoading">
+    <!-- Optional: Add a loading indicator or message here -->
+    <p>Loading...</p>
+</div>
+<div *ngIf="!isLoading">
+    <div *ngFor="let experience of experiences">
+        <app-expericence-card [Expericence]="experience"></app-expericence-card>
+    </div>
+</div>
+
+
+
+
+
+
