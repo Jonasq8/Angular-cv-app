@@ -3,11 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\cv",
+    "\\src\\app\\cv\\experience\\expericence-card",
+    "\\src\\app\\cv\\profile-intro",
+    "\\src\\app\\cv\\qualification\\qualification-card",
+    "\\src\\app\\home",
     "\\src\\app\\utils",
     "\\src\\app\\utils\\service",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\app\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }

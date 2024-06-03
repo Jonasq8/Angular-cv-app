@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { QualificationService } from '../utils/service/qualification.service';
-import { Qualification } from '../utils/models/Qualification';
+import { Qualification } from '../../utils/models/Qualification';
+import { QualificationService } from '../../utils/service/qualification.service';
+
+
 
 
 @Component({

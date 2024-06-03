@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Qualification } from '../models/Qualification';
-import * as fs from "fs";
-import * as path from "path";
-import { parse } from 'csv-parse';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -36,9 +34,19 @@ export class QualificationService {
     //  });
 
     return new Promise((resolve, reject) => {
-      resolve([new Qualification("Python", "4/5"),
-      new Qualification("C#", "4/5"),
-      new Qualification("SQL", "4/5"),])
+      resolve([
+        new Qualification("Python", "4/5"),
+        new Qualification("C#", "4/5"),
+        new Qualification("SQL", "4/5"),
+
+        new Qualification("Angular", "4/5"),
+        new Qualification("TypeScript", "3/5"),
+        new Qualification("JavaScript", "4/5"),
+        new Qualification("Java", "4/5"),
+   
+
+
+      ])
     });
     }
       

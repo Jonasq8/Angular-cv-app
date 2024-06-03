@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Experience } from '../../utils/models/Experience';
+
 
 @Component({
   selector: 'app-expericence-card',

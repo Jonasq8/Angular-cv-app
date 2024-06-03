@@ -1,0 +1,53 @@
+.flex-container {
+  align-self: center;
+  display: flex;
+  text-align: center;
+  padding:10%;
+}
+
+.flex-container > div {
+    
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer{
+    height:200px;
+}
+
+.TextBoxFlexBox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-self: center;
+}
+.TextBox {
+  padding: 5%;
+/*  outline: auto;*/
+  margin: 5%;
+}
+
+.ProfilPicture {
+  width: 50%;
+ 
+}
+
+.gitpic {
+  width: 5%;
+}
+
+.icon {
+  width: 40px;
+  margin: 5px;
+}
+
+.flex-container-projects {
+  align-self: center;
+  display: flex;
+  text-align: center;
+/*  outline: auto;*/
+  padding: 10%
+}

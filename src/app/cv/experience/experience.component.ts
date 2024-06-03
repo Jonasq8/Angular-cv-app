@@ -1,6 +1,7 @@
 import { Component,} from '@angular/core';
-import { Experience } from '../utils/models/Experience';
-import { ExperienceService } from '../utils/service/experience.service';
+import { ExperienceService } from '../../utils/service/experience.service';
+import { Experience } from '../../utils/models/Experience';
+
 
 
 @Component({

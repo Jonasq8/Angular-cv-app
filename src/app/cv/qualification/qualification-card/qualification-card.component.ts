@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Qualification } from '../../utils/models/Qualification';
+
 
 @Component({
   selector: 'app-qualification-card',
