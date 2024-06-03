@@ -1,26 +1,36 @@
-    <mat-toolbar color="primary">
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
         <button mat-button> HOME </button>
         <button mat-button> CV </button>
         <button mat-button> COVERLETTER </button>
-    </mat-toolbar>
+        <span class="example-spacer"> </span>
 
-  <div class="projectCollector">
+        <a href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" class="facebook" /></a>
+      
+        <a href="https://github.com/jonasq8"><img src="assets/github-logo.png" class="facebook" /></a>
+        <a href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png" class="facebook" /></a>
+    </mat-toolbar-row>
+</mat-toolbar>
 
 
-  </div>
-        
-    <div class="cvColector">
-        <div class="row">
 
-            <div class="columExperience">
-                <app-profile-intro style="margin:10px"> </app-profile-intro>
-                <app-experience class="experience"> </app-experience>
-            </div>
-            <div class="columQualification">
-                <app-qualification style="margin:10px"> </app-qualification>
-            </div>
+<div class="projectCollector">
+    <div>
+        <img src="assets/profilPicture.jpg" class="profilePicture" alt="profil Picture">
+           
+    </div>
+</div>
+<div class="cvColector">
+    <div class="row">
+        <div class="columExperience">
+            <app-profile-intro style="margin:10px"> </app-profile-intro>
+            <app-experience class="experience"> </app-experience>
+        </div>
+        <div class="columQualification">
+            <app-qualification style="margin:10px"> </app-qualification>
         </div>
     </div>
+</div>
 
 
 
