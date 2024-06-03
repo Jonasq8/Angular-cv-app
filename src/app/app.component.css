@@ -1,12 +1,12 @@
 
 .cvColector {
-    float: right;
+  float: right;
   width:60%;
-
 }
 
 .projectCollector{
-
+    width:40%;
+    float:left;
 }
 
 .columExperience {
@@ -18,7 +18,26 @@
   margin: 25px;
   float: left;
   width: 25%;
+}
 
+.profilePicture {
+  width: 40%;
+  float: right;
+  margin: 50Px;
+}
+
+.gitpic{
+  width: 5%;
+
+}
+
+.facebook{
+  width:40PX;
+  margin: 5px; 
+}
+
+.example-spacer {
+  flex: 1 1 auto;
 }
 
 

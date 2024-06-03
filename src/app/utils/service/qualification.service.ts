@@ -3,7 +3,6 @@ import { Qualification } from '../models/Qualification';
 import * as fs from "fs";
 import * as path from "path";
 import { parse } from 'csv-parse';
-import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -14,28 +13,35 @@ export class QualificationService {
 
  
 
-  async getQualifications(): Promise<Qualification[] > {
-    const csvFilePath = path.resolve('C:\\Users\\jonas\\source\\repos\\AngularCV\\angular-cv-app\\src\\assets\\Qualification.csv');
+  getQualifications(): Promise<Qualification[]> {
+    //const csvFilePath = path.resolve('../Angular-cv-app/src/assets/Qualification.csv');
 
-    const headers = ["title", 'text'];
+    //const headers = ["title", 'text'];
 
-      const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
+    //  const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
 
-      return new Promise((resolve, reject) => {
-        parse(fileContent, {
-          delimiter: ';',
-          fromLine: 2,
-          columns: headers,
-        }, (error, result: Qualification[]) => {
-          if (error) {
-            console.error(error);
-            reject(error);
-          } else {
-            resolve(result);
-          }
-        });
-      });
+    //  return new Promise((resolve, reject) => {
+    //    parse(fileContent, {
+    //      delimiter: ';',
+    //      fromLine: 2,
+    //      columns: headers,
+    //    }, (error, result: Qualification[]) => {
+    //      if (error) {
+    //        console.error(error);
+    //        reject(error);
+    //      } else {
+    //        resolve(result);
+    //      }
+    //    });
+    //  });
 
+    return new Promise((resolve, reject) => {
+      resolve([new Qualification("Python", "4/5"),
+      new Qualification("C#", "4/5"),
+      new Qualification("SQL", "4/5"),])
+    });
     }
+      
+    
   
 }

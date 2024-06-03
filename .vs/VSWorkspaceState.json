@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\cv",
+    "\\src\\app\\utils",
+    "\\src\\app\\utils\\service",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\C:\\Users\\jonas\\Source\\Repos\\Jonasq8\\Angular-cv-app",
+  "SelectedNode": "\\src\\index.html",
   "PreviewInSolutionExplorer": false
 }
