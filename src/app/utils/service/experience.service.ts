@@ -34,7 +34,7 @@ export class ExperienceService {
     //    });
     //  });
     return new Promise((resolve, reject) => {
-      resolve([new Experience("UCN", "Jeg bestod den afsluttende eksamen med 10 og har et gennemsnit pÃ¥ 11,33. Uddannelsen giver kerne kompetencer til udviklingen af software, med fokus pÃ¥ kodningssprogene Java og C#.Hertil har jeg lÃ¦rt om forskellige udviklingsmetoder f.eks.SCRUM og unified process.Desuden har jeg modtaget undervisning i teknologier som MSSQL og ASP.Net, som giver mulighed for at lave distribueret systemer.Mit afsluttende projekt var et distribueret system som gav rÃ¥dgivningen til lÃ¦ger og sygeplejer vedrÃ¸rene patienters blodsukker.Systemet bestod af en Angluar front-end, en ASP.Net backend og en MMSQL server ", "https://ucn-cdn-endpoint-prod.azureedge.net/cache/b/7/4/2/f/8/b742f8a48a0f78ad3bce7bd56733aaef4fef0f6d.jpg"),
+      resolve([new Experience("UCN", "Jeg bestod den afsluttende eksamen med 10 og har et gennemsnit på 11,33. Uddannelsen giver kerne kompetencer til udviklingen af software, med fokus på kodningssprogene Java og C#.Hertil har jeg lært om forskellige udviklingsmetoder f.eks.SCRUM og unified process.Desuden har jeg modtaget undervisning i teknologier som MSSQL og ASP.Net, som giver mulighed for at lave distribueret systemer.Mit afsluttende projekt var et distribueret system som gav rådgivningen til læger og sygeplejer vedrørene patienters blodsukker.Systemet bestod af en Angluar front-end, en ASP.Net backend og en MMSQL server ", "https://ucn-cdn-endpoint-prod.azureedge.net/cache/b/7/4/2/f/8/b742f8a48a0f78ad3bce7bd56733aaef4fef0f6d.jpg"),
         ])
     });
   }
