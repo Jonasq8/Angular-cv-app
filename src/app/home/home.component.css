@@ -5,6 +5,13 @@
   padding:10%;
 }
 
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    text-align: start;
+  }
+}
+
 .flex-container > div {
     
 }
@@ -24,15 +31,35 @@
   width: 50%;
   align-self: center;
 }
+@media (max-width: 800px) {
+  .TextBoxFlexBox {
+    width: 100%;
+  }
+}
+
 .TextBox {
   padding: 5%;
 /*  outline: auto;*/
   margin: 5%;
 }
 
+@media (max-width: 800px){
+  .TextBox {
+    padding: 0%;
+    /*  outline: auto;*/
+    margin: 0%;
+  }
+}
+
 .ProfilPicture {
-  width: 50%;
- 
+  align-self: flex-start;
+  width: 75%;
+}
+
+@media (max-width: 800px) {
+  .ProfilPicture {
+    align-self:center
+  }
 }
 
 .gitpic {
@@ -51,3 +78,12 @@
 /*  outline: auto;*/
   padding: 10%
 }
+
+@media (max-width: 800px) {
+  .flex-container-projects {
+    flex-direction: column;
+    text-align:start;
+  }
+}
+
+

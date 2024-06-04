@@ -13,15 +13,12 @@ export class AppComponent implements
 
   OnInit {
   constructor(private router: Router) { }
-
-  ngOnInit() {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(event => {
-      console.log('NavigationEnd:', event);
-    });
-
-
-  }
   title = 'Jonas Ø. Nielsen - CV ';
+  ngOnInit() {
+    //  if (location.protocol === 'http:') {
+    //    window.location.href = location.href.replace('http', 'https');
+    //  }
+    //}
+    
+  }
 }

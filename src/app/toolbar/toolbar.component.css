@@ -1,0 +1,20 @@
+.facebook {
+  width: 40PX;
+  margin: 5px;
+}
+
+.Toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  background-color: #7CC0EB;
+}
+
+
+
+.spacer {
+    flex-basis:45%;
+}
+
+

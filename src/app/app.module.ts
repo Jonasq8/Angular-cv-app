@@ -11,12 +11,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CvModule } from './cv/cv.module';
 import { HomeComponent } from './home/home.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    ToolbarComponent,
     
   ],
   imports: [
