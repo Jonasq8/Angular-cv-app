@@ -1,15 +1,26 @@
 .card-picture {
   align-self: center;
-  padding: 10%
+ /* padding: 10%*/
 }
 
 .expericence-card-text {
-  display:flex;
+  /*display:flex;*/
 
-  max-width: 75%;
+  text-align:center;
   align-self: center;
 }
 
 .expericence-card {
   z-index: -1;
+}
+
+@media (min-width: 800px) {
+  .expericence-card-text {
+    display: flex;
+    text-align: start;
+  }
+
+  .card-picture {
+     padding: 10%
+  }
 }
