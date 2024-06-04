@@ -1,5 +1,5 @@
 .facebook {
-  width: 40PX;
+  width: 40px;
   margin: 5px;
 }
 
@@ -9,12 +9,16 @@
   justify-content: center;
   align-items:center;
   background-color: #7CC0EB;
+  
 }
 
-
+.button{
+    outline:groove;
+    margin-left:20px;
+}
 
 .spacer {
-    flex-basis:45%;
+  flex-basis: 33%;
 }
 
 

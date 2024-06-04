@@ -1,4 +1,57 @@
-.cvColector {
+
+.row{
+    display:flex;
+    flex-direction:column;
+   /* background-color:aquamarine;*/
+
+}
+.profileAndContact {
+ /* background-color: black;*/
+ 
+}
+.mainContent {
+  /*background-color: pink;*/
+ 
+}
+.qualification {
+  /*background-color: blue;*/
+
+}
+
+.profilePicture{
+width:60%;
+}
+
+@media (min-width: 800px) {
+
+  .profileAndContact {
+    margin-left:25px;
+    width:25%;
+    /* background-color: black;*/
+  }
+
+  .mainContent {
+    width: 50%;
+    /*background-color: pink;*/
+  }
+
+  .qualification {
+    /*background-color: blue;*/
+    margin-right: 25px;
+    width: 25%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .try{
+      visibility:hidden;
+  }
+}
+    /* background-color:aquamarine;*/
+    /*.cvColector {
   float: right;
   width: 60%;
 }
@@ -37,4 +90,4 @@
 
 .example-spacer {
   flex: 1 1 auto;
-}
+}*/

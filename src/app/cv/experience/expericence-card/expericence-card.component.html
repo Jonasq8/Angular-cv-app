@@ -4,11 +4,19 @@
         <mat-card-title>{{Expericence.title}}</mat-card-title>
 
     </mat-card-header>
-    <img mat-card-image src="{{Expericence.picture}}" alt="" class="card-picture">
+    
     <mat-card-content class="expericence-card-text">
-        <p>
-            {{Expericence.text}}
-        </p>
+        <div>
+            <img mat-card-image src="{{Expericence.picture}}" alt="" class="card-picture" width="200"
+                 height="200">
+        </div>
+        <div>
+            <p>
+                {{Expericence.text}}
+            </p>
+        </div>
+
+
     </mat-card-content>
  
 </mat-card>
