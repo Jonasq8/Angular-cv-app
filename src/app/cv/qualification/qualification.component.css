@@ -1,3 +1,9 @@
 .qualificationCard {
   margin: 10px;
 }
+
+.flexbox {
+  padding: 30px;
+  width: 40%;
+  background-color: #7CC0EB;
+}

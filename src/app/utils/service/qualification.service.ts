@@ -35,14 +35,14 @@ export class QualificationService {
 
     return new Promise((resolve, reject) => {
       resolve([
-        new Qualification("Python", "4/5"),
-        new Qualification("C#", "4/5"),
-        new Qualification("SQL", "4/5"),
+        new Qualification("Python", 4),
+        new Qualification("C#", 4),
+        new Qualification("SQL", 4),
 
-        new Qualification("Angular", "4/5"),
-        new Qualification("TypeScript", "3/5"),
-        new Qualification("JavaScript", "4/5"),
-        new Qualification("Java", "4/5"),
+        new Qualification("Angular", 4),
+        new Qualification("TypeScript", 3),
+        new Qualification("JavaScript", 4),
+        new Qualification("Java", 4),
    
 
 

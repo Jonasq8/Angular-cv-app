@@ -1,12 +1,12 @@
 export class Qualification {
-  public title?: string = ""
-  public text?: string = ""
+  public title: string = ""
+  public stars: number = 1
 
 
 
-  constructor(title: string, text: string, ) {
+  constructor(title: string, stars: number, ) {
     this.title = title
-    this.text = text
+    this.stars = stars
 
   }
 }

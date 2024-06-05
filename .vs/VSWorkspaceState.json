@@ -3,10 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\cv",
+    "\\src\\app\\cv\\experience\\expericence-card",
+    "\\src\\app\\cv\\qualification\\qualification-card",
     "\\src\\app\\home",
-    "\\src\\app\\utils",
-    "\\src\\app\\utils\\service",
+    "\\src\\app\\toolbar",
     "\\src\\assets"
   ],
+  "SelectedNode": "\\src\\app\\home\\home.component.html",
   "PreviewInSolutionExplorer": false
 }
