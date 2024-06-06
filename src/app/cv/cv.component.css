@@ -1,93 +1,84 @@
 
+/*
+
+    Mobile Version
+
+*/
+
 .row{
-    display:flex;
-    flex-direction:column;
+/*    display:flex;
+    flex-direction:column;*/
    /* background-color:aquamarine;*/
 
 }
 .profileAndContact {
  /* background-color: black;*/
  
+ 
 }
 .mainContent {
   /*background-color: pink;*/
- 
 }
 .qualification {
   /*background-color: blue;*/
-
 }
 
 .profilePicture{
 width:60%;
 }
+mainContentText{
+    text-align:center;
+}
 
+.head{
+    text-align:center;
+}
+/*
+
+   PC version
+
+*/
 @media (min-width: 800px) {
 
-  .profileAndContact {
-    margin-left:25px;
-    width:25%;
-    /* background-color: black;*/
+
+
+  .head {
+    text-align: start;
+  }
+
+  .profileAndContactQualification {
+    width: 300px;
+    background-color: #859CAB;
+  }
+
+  .mainContentText {
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: start;
   }
 
   .mainContent {
+    display:flex;
+    flex-direction:row;
+   
     width: 50%;
-    /*background-color: pink;*/
+    background-color: #7CC0EB;
+    
   }
 
   .qualification {
-    /*background-color: blue;*/
-    margin-right: 25px;
+    padding: 50px;
+    background-color: #7CC0EB;
+    margin: 25px;
     width: 25%;
   }
 
   .row {
-    display: flex;
-    flex-direction: row;
-    
+   
+    text-align: -webkit-center;
   }
   .try{
       visibility:hidden;
   }
 }
-    /* background-color:aquamarine;*/
-    /*.cvColector {
-  float: right;
-  width: 60%;
-}
 
-.projectCollector {
-  width: 40%;
-  float: left;
-}
-
-.columExperience {
-  margin: 25px;
-  float: left;
-  width: 40%;
-}
-
-.columQualification {
-  margin: 25px;
-  float: left;
-  width: 25%;
-}
-
-.profilePicture {
-  width: 40%;
-  float: right;
-  margin: 50Px;
-}
-
-.gitpic {
-  width: 5%;
-}
-
-.facebook {
-  width: 40PX;
-  margin: 5px;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
-}*/

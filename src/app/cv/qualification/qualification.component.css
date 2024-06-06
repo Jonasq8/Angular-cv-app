@@ -5,5 +5,16 @@
 .flexbox {
   padding: 30px;
   width: 40%;
-  background-color: #7CC0EB;
+  
 }
+
+
+
+@media(max-width: 1000px) {
+  .flexbox {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+

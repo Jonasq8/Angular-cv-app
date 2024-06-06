@@ -8,12 +8,14 @@
 </div>
 <div *ngIf="!isLoading">
     <div class="flexbox">
+        <div >
+            <h5> Kompetencer</h5>
 
-    <h1> Kompetencer </h1>
-    <div *ngFor="let qualifiation of qualifiations">
+        </div>
+        <div *ngFor="let qualifiation of qualifiations">
 
-        <app-qualification-card class="qualificationCard" [qualifiation]="qualifiation"> </app-qualification-card>
-    </div>
+            <app-qualification-card class="qualificationCard" [qualifiation]="qualifiation"> </app-qualification-card>
+        </div>
 
     </div>
 </div>

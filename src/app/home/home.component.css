@@ -40,6 +40,14 @@
   /*  outline: auto;*/
   padding: 10%
 }
+.flex-container-projects-right {
+  align-self: center;
+  display: flex;
+  text-align: center;
+  /*  outline: auto;*/
+  padding: 10%;
+  background-color:#7CC0EB;
+}
 
 .Picture{
     width:75%;
@@ -57,6 +65,11 @@
     flex-direction: column;
     text-align: start;
   }
+  .flex-container-projects-right {
+    flex-direction: column;
+    text-align: start;
+   
+  }
   .TextBox {
     padding: 0%;
     /*  outline: auto;*/
@@ -64,6 +77,7 @@
   }
   .TextBoxFlexBox {
     width: 100%;
+    background-color:none;
   }
   .flex-container {
     flex-direction: column;
@@ -84,6 +98,10 @@
     flex-direction: column;
     text-align: center;
     padding: 0;
+  }.flex-container-projects-right {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
   }
 
   .TextBox {
@@ -94,6 +112,7 @@
 
   .TextBoxFlexBox {
     width: 75%;
+    order: 1; 
   }
 
   .flex-container {
