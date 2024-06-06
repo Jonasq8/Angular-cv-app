@@ -1,6 +1,5 @@
 .flexBox {
   padding: 30px;
- 
   text-align: center;
   align-self: center;
 }
@@ -11,4 +10,12 @@
   /* width:300px;
   height:600px;*/
   width: 100%;
+}
+
+@media(min-width: 800px) {
+  .flexBox {
+    padding: 0;
+    text-align: center;
+    align-self: center;
+  }
 }

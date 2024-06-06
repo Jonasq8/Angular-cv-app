@@ -20,10 +20,16 @@
   z-index: -1;
 }
 
+/*
+    PC version
+
+*/
+
 @media (min-width: 800px) {
 
   .textField {
-    padding: 30px;
+   
+    
   }
 
   .expericence-card-text {
@@ -33,7 +39,14 @@
   }
 
   .card-picture {
-   padding: 30px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .expericenceHeader {
+    text-align: start;
+  
 
   }
 }

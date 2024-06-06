@@ -4,13 +4,14 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\cv",
+    "\\src\\app\\cv\\experience",
+    "\\src\\app\\cv\\profile-intro",
     "\\src\\app\\cv\\qualification",
-    "\\src\\app\\home",
-    "\\src\\app\\toolbar",
+    "\\src\\app\\cv\\qualification\\qualification-card",
     "\\src\\app\\utils",
     "\\src\\app\\utils\\service",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\cv\\qualification\\qualification.component.css",
+  "SelectedNode": "\\src\\app\\cv\\cv.component.html",
   "PreviewInSolutionExplorer": false
 }
