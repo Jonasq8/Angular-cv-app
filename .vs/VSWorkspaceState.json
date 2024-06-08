@@ -5,13 +5,12 @@
     "\\src\\app",
     "\\src\\app\\cv",
     "\\src\\app\\cv\\experience",
-    "\\src\\app\\cv\\profile-intro",
-    "\\src\\app\\cv\\qualification",
-    "\\src\\app\\cv\\qualification\\qualification-card",
+    "\\src\\app\\toolbar",
     "\\src\\app\\utils",
-    "\\src\\app\\utils\\service",
+    "\\src\\app\\utils\\models",
+    "\\src\\app\\utils\\pipe",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\cv\\cv.component.html",
+  "SelectedNode": "\\src\\app\\cv\\experience\\expericence-card\\expericence-card.component.html",
   "PreviewInSolutionExplorer": false
 }

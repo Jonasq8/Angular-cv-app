@@ -12,6 +12,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { CvModule } from './cv/cv.module';
 import { HomeComponent } from './home/home.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { TruncatePipe } from './utils/pipe/truncate.pipe';
 
 
 @NgModule({
@@ -19,6 +22,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     AppComponent,
     HomeComponent,
     ToolbarComponent,
+    TruncatePipe,
+   
     
   ],
   imports: [
@@ -28,6 +33,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
     CvModule,
   ],
   providers: [

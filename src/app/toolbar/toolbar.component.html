@@ -11,10 +11,47 @@
 </mat-toolbar> -->
 
 
+<div *ngIf="showMenu; else WebToolbar">
     <div class="Toolbar">
-        <div>
+
+        <button mat-icon-button> <img src="assets/LOGO-BIG.png"  />  </button>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+
+            
+
+            <button mat-menu-item routerLink="/cv">
+                <span>CV</span>
+            </button>
+
+        </mat-menu>
+        
+
+        <button mat-icon-button [matMenuTriggerFor]="contact" aria-label="Example icon-button with a menu">
+            <mat-icon>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg>
+            </mat-icon>
+        </button>
+        <mat-menu #contact="matMenu">
+            <a href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" class="facebook" /></a>
+            <a href="https://github.com/jonasq8"><img src="assets/github-logo.png" class="facebook" /></a>
+            <a href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png" class="facebook" /></a>
+        </mat-menu>
+
+    </div>
+</div>
+<ng-template #WebToolbar>
+
+    <div class="Toolbar">
+        <button mat-button routerLink="/home"> <img src="assets/LOGO-BIG.png" width="50px" />  </button>
+     <!--    <div>
             <button mat-button routerLink="/home" class="button">Home</button>
-        </div>
+        </div> -->
         <div>
             <button mat-button routerLink="/cv" class="button">CV</button>
         </div>
@@ -31,6 +68,8 @@
             <a href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png" class="facebook" /></a>
         </div>
     </div>
+
+</ng-template>
 
 
 

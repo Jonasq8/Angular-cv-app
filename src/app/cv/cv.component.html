@@ -1,17 +1,14 @@
 
 
-   <!--  <div class="profileAndContact">
-       
-        </div> -->
-   
-   <!--  <div class="try"> <h1>Erfaringer:</h1></div> -->
-    <div class="row">
+
+<div *ngIf="!isMobile;else mobile" class="row">
     <div class="mainContent">
+
         <div class="profileAndContactQualification">
             <app-profile-intro> </app-profile-intro>
             <app-qualification> </app-qualification>
         </div>
-        <div  class="mainContentText">
+        <div class="mainContentText">
             <div class="profilTextBox">
                 <h1 class="head"> Jonas Østergaard Nielsen </h1>
                 <p class="head">
@@ -31,26 +28,38 @@
         </div>
     </div>
 
+</div>
 
 
+
+<ng-template #mobile>
+    <div class="mainContent">
+
+        <div class="profilTextBox">
+            <h1 class="head"> Jonas Østergaard Nielsen </h1>
+            <p class="head">
+                Jeg er ny uddannet som datamatiker. Igennem min studietid har jeg arbejdet primært med højniveau sprog som C#, JavaScript og TypeScript.
+
+                Hertil har jeg erfaringen med Webframeworks som Angular og backend services i ASP.Net Core som kommuniker til en MMSQL.
+
+                Studieprojekterne har været distribueret systemer som har fuldt REST strukturen. Projekterne har anvendt Entityframework som ORM .
+
+                Jeg har brændt for at komme i mål og udvikle nogle fede projekter i samarbejde mine studiekammerater.
+
+                Det er også afspejlet i mine karaktere.
+            </p>
+            <app-profile-intro> </app-profile-intro>
+
+
+        </div>
+        <div class="profileAndContactQualification">
+
+            <app-qualification> </app-qualification>
+        </div>
+        <div class="mainContentText">
+
+            <app-experience> </app-experience>
+        </div>
     </div>
-    <!-- <div class ="try"> <h1>Kompetencer:</h1></div> -->
-   <!--  <div class="qualification">  </div> -->
 
-
-
-
-
-
-<!--         >
-
-
-
-        
-            
-            <app-experience class="experience"> </app-experience>
-       
-
-           
-
- -->
+</ng-template>

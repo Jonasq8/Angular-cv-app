@@ -15,10 +15,8 @@ export class AppComponent implements
   constructor(private router: Router) { }
   title = 'Jonas Ø. Nielsen - CV ';
   ngOnInit() {
-    //  if (location.protocol === 'http:') {
-    //    window.location.href = location.href.replace('http', 'https');
-    //  }
-    //}
-    
+  //    if (location.protocol === 'http:') {
+  //      window.location.href = location.href.replace('http', 'https');
+  //    }
   }
 }

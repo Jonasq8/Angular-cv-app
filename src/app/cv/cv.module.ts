@@ -16,6 +16,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CvComponent } from './cv.component';
+import { GalleryComponent } from './gallery/gallery.component';
+
+
+
+
+
 
 
 @NgModule({
@@ -25,7 +31,9 @@ import { CvComponent } from './cv.component';
     QualificationComponent,
     ExpericenceCardComponent,
     ProfileIntroComponent,
-    CvComponent
+    CvComponent,
+    GalleryComponent,
+    
 
   ],
   imports: [
@@ -34,6 +42,7 @@ import { CvComponent } from './cv.component';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    
  
   ],
   exports: [
@@ -41,7 +50,8 @@ import { CvComponent } from './cv.component';
     ExperienceComponent,
     QualificationComponent,
     ExpericenceCardComponent,
-    ProfileIntroComponent
+    ProfileIntroComponent,
+    
   ]
 })
 export class CvModule { }

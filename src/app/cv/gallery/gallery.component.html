@@ -1,0 +1,11 @@
+<div class="gallery">
+    <div class="image-container" *ngFor="let image of images" (click)="openModal(image)">
+        <img [src]="image.src" [alt]="image.alt" class="thumbnail" width="200px" height="200px">
+    </div>
+</div>
+
+<div id="myModal" class="modal" [class.show]="modalVisible" (click)="closeModal()">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img class="modal-content" [src]="currentImage?.src" id="img01">
+    <div id="caption">{{ currentImage?.text }}</div>
+</div>

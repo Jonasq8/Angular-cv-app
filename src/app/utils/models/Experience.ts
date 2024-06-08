@@ -1,7 +1,7 @@
 export class Experience {
   public title: string = ""
   public text: string = ""
-  public picture: string =""
+  public picture: string = ""
 
 
   constructor(title: string, text: string, picture: string) {

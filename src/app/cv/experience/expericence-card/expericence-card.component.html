@@ -1,4 +1,4 @@
-<!-- <mat-card class="expericence-card">
+<!-- <mat-card class="expericence-card" *ngIf="Expericence">
     <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>{{Expericence.title}}</mat-card-title>
@@ -7,8 +7,7 @@
 
     <mat-card-content class="expericence-card-text">
         <div>
-            <img mat-card-image src="{{Expericence.picture}}" alt="" class="card-picture" width="250"
-                 height="200">
+          <app-gallery [Picture]="Expericence.picture" [PictureText]="Expericence.text"> </app-gallery>
         </div>
         <div>
             <p>
@@ -18,19 +17,21 @@
 
 
     </mat-card-content>
-
 </mat-card> -->
-<div class="colorBox">
-<h1 class="expericenceHeader">{{Expericence.title}} </h1>
-<div class="expericence-card-text">
 
-    <div>
-        <img class="card-picture" src="{{Expericence.picture}}" alt="">
-    </div>
-    <div class="textField">
-        {{Expericence.text}}
-    </div>
-</div>
 
-</div>
+
+    <div class="colorBox" *ngIf="Expericence">
+        <h1 class="expericenceHeader">{{Expericence.title}} </h1>
+        <div class="expericence-card-text">
+
+            <div>
+                <app-gallery [Picture]="Expericence.picture" [PictureText]="Expericence.text"> </app-gallery>
+            </div>
+            <div class="textField">
+                {{Expericence.text | truncate:20}}
+            </div>
+        </div>
+
+    </div>
 

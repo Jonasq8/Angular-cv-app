@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Experience } from '../../../utils/models/Experience';
+
 
 
 @Component({
@@ -7,5 +9,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './expericence-card.component.css'
 })
 export class ExpericenceCardComponent {
-  @Input() public Expericence: any;
+  @Input() public Expericence?: Experience;
+  
 }
