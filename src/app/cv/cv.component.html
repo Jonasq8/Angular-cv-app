@@ -1,29 +1,32 @@
 
 
 
-<div *ngIf="!isMobile;else mobile" class="row">
-    <div class="mainContent">
+<div *ngIf="!isMobile;else mobile" class="flex justify-center justify-self-center">
+    <div class="  w-1/2">
 
-        <div class="profileAndContactQualification">
+        <div class="profilTextBox">
+            <h1 class="text-center p-6 text-xl font-medium text-black"> Jonas Østergaard Nielsen </h1>
+            <p class="head">
+                Jeg er ny uddannet som datamatiker. Igennem min studietid har jeg arbejdet primært med højniveau sprog som C#, JavaScript og TypeScript.
+
+                Hertil har jeg erfaringen med Webframeworks som Angular og backend services i ASP.Net Core som kommuniker til en MMSQL.
+
+                Studieprojekterne har været distribueret systemer som har fuldt REST strukturen. Projekterne har anvendt Entityframework som ORM .
+
+                Jeg har brændt for at komme i mål og udvikle nogle fede projekter i samarbejde mine studiekammerater.
+
+                Det er også afspejlet i mine karaktere.
+            </p>
             <app-profile-intro> </app-profile-intro>
+
+
+        </div>
+        <div class="profileAndContactQualification">
+
             <app-qualification> </app-qualification>
         </div>
         <div class="mainContentText">
-            <div class="profilTextBox">
-                <h1 class="head"> Jonas Østergaard Nielsen </h1>
-                <p class="head">
-                    Jeg er ny uddannet som datamatiker. Igennem min studietid har jeg arbejdet primært med højniveau sprog som C#, JavaScript og TypeScript.
 
-                    Hertil har jeg erfaringen med Webframeworks som Angular og backend services i ASP.Net Core som kommuniker til en MMSQL.
-
-                    Studieprojekterne har været distribueret systemer som har fuldt REST strukturen. Projekterne har anvendt Entityframework som ORM .
-
-                    Jeg har brændt for at komme i mål og udvikle nogle fede projekter i samarbejde mine studiekammerater.
-
-                    Det er også afspejlet i mine karaktere.
-                </p>
-
-            </div>
             <app-experience> </app-experience>
         </div>
     </div>
@@ -36,7 +39,7 @@
     <div class="mainContent">
 
         <div class="profilTextBox">
-            <h1 class="head"> Jonas Østergaard Nielsen </h1>
+            <h1 class="text-center p-6 text-xl font-medium text-black"> Jonas Østergaard Nielsen </h1>
             <p class="head">
                 Jeg er ny uddannet som datamatiker. Igennem min studietid har jeg arbejdet primært med højniveau sprog som C#, JavaScript og TypeScript.
 

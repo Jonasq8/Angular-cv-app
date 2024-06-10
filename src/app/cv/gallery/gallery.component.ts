@@ -9,15 +9,22 @@ export class GalleryComponent implements OnInit {
 
   public images: any[] = [];
 
+
+
+
   ngOnInit(): void {
     this.images = [
       { src: this.Picture, alt: '', text: this.PictureText },
+      
       // Tilføj flere billeder efter behov
     ];
+ 
+    
   }
 
   @Input() public Picture?: string 
   @Input() public PictureText? : string
+
 
   modalVisible = false;
   currentImage: { src: string, alt: string, text: string } | null = null;

@@ -1,26 +1,39 @@
-
-
-
-
-<div *ngIf="isLoading">
-    <!-- Optional: Add a loading indicator or message here -->
-    <p>Loading...</p>
-</div>
-<div *ngIf="!isLoading">
-    <div class="flexbox">
-        <div >
-            <h5> Kompetencer</h5>
-
+<div *ngIf="!isMobile;else mobile" class="relative w-full pb-10" >
+    <div class="flex overflow-hidden w-full "
+         (touchstart)="onTouchStart($event)" 
+         (touchmove)="onTouchMove($event)" 
+         (touchend)="onTouchEnd()">
+        <div class="flex justify-center transition-transform duration-500 ease-in-out w-full  " 
+              [style.transform]="'translateX(-' + (currentExperienceIndex * 33) + '%)'">
+            <div *ngFor="let qualification of qualifications" class="flex   bg-blue">
+                <div class="flex  p-4">
+                    <app-qualification-card [qualifiation]="qualification"></app-qualification-card>
+                </div>
+            </div>
         </div>
-        <div *ngFor="let qualifiation of qualifiations">
-
-            <app-qualification-card class="qualificationCard" [qualifiation]="qualifiation"> </app-qualification-card>
-        </div>
-
     </div>
+
 </div>
 
 
-
-
-
+<ng-template #mobile>
+    <div class="relative w-full" >
+        <div class="flex overflow-hidden w-full "
+                (touchstart)="onTouchStart($event)" 
+                (touchmove)="onTouchMove($event)" 
+                (touchend)="onTouchEnd()">
+            <div class="flex transition-transform duration-500 ease-in-out w-full  " 
+                    [style.transform]="'translateX(-' + (currentExperienceIndex * 33) + '%)'">
+                <div *ngFor="let qualification of qualifications" class="flex   bg-blue">
+                    <div class="flex  p-4">
+                        <app-qualification-card [qualifiation]="qualification"></app-qualification-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-4 pb-10">
+            <div *ngFor="let i of indicators" class="h-2 w-2 rounded-full mx-1"
+                    [ngClass]="{'bg-blue-600': currentExperienceIndex === i, 'bg-gray-300': currentExperienceIndex !== i}"></div>
+        </div>
+    </div>
+</ng-template>

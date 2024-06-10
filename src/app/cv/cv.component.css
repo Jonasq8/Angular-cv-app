@@ -38,8 +38,11 @@ mainContentText{
    PC version
 
 */
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
 
+} */
+
+  /*
   .profilTextBox{
       width:95%;
   }
@@ -84,5 +87,5 @@ mainContentText{
   .try{
       visibility:hidden;
   }
-}
+} */
 

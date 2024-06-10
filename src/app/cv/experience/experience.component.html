@@ -6,14 +6,67 @@
 <app-expericence-card></app-expericence-card>
 </div> -->
 
+<!-- <div *ngIf="isLoading">
+
+    <p>Loading...</p>
+</div>
+<div *ngIf="!isLoading">
+    <div class="flex overflow-x-auto space-x-4 py-4"> 
+        <div *ngFor="let experience of experiences">
+            <app-expericence-card class="experienceCard" [Expericence]="experience"></app-expericence-card>
+        </div>
+
+        
+    </div>
+</div> -->
+
 <div *ngIf="isLoading">
     <!-- Optional: Add a loading indicator or message here -->
     <p>Loading...</p>
 </div>
-<div *ngIf="!isLoading">
-    <div *ngFor="let experience of experiences">
-        <app-expericence-card class="experienceCard" [Expericence]="experience"></app-expericence-card>
+<div *ngIf="!isLoading" class="relative align-center">
+    <div class="flex justify-center items-center overflow-hidden w-full" 
+         (touchstart)="onTouchStart($event)" 
+         (touchmove)="onTouchMove($event)" 
+         (touchend)="onTouchEnd()">
+        <div class="flex transition-transform duration-500 ease-in-out" [style.transform]="'translateX(-' + (currentExperienceIndex * 100) + '%)'">
+            <div *ngFor="let experience of experiences" class="flex-none w-full bg-blue ">
+                <div class="flex flex-col">
+                    <div class="flex justify-center items-center pt-10 pb-10">
+                        <img src="{{experience.picture}}" alt="Image" height="200" width="200">
+                    </div>
+                    <app-expericence-card [Expericence]="experience"></app-expericence-card>
+                </div>
+            </div>
+          
+        </div>
+       
     </div>
+    <div class="flex flex-col  justify-center mt-4 pb-10">
+        <div class="flex flex-row justify-center pb-10 " > 
+            <div *ngFor="let experience of experiences; let i = index" class="h-2 w-2 rounded-full mx-1 " [ngClass]="{'bg-blue-600': currentExperienceIndex === i, 'bg-gray-300': currentExperienceIndex !== i}">
+    
+            </div>
+
+        </div>
+        
+        <div class="flex justify-center">
+            <button  (click)="prevExperience()">
+                <mat-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+                </mat-icon>
+            </button>
+        
+            <button  (click)="nextExperience()">
+                <mat-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                </mat-icon>
+            </button>
+        </div>
+    
+        
+        
+    </div >
 </div>
 
 

@@ -1,65 +1,74 @@
-<div class="flex-vertical">
-
-
-
-    <div class="flex-container">
-        <div class="TextBoxFlexBox">
-            <h1> Lidt om mig </h1>
-            <div class="TextBox">
+<div class="flex flex-col ">
+    <div class="flex-col xl:flex xl:flex-row md:p-80">
+        <div class="flex flex-col items-center">
+            <h1 class="text-center p-6 text-xl font-medium text-black  "> Lidt om mig </h1>
+            <div class="p-6 text-center ">
                 Jeg er ny uddannet som datamatiker. Igennem min studietid har jeg arbejdet primært med højniveau sprog som C#, JavaScript og TypeScript. Hertil har jeg erfaringen med Webframeworks som Angular og backend services i ASP.Net Core som kommuniker til en MMSQL. Studieprojekterne har været distribueret systemer som har fuldt REST strukturen. Projekterne har anvendt Entityframework som ORM .
                 Jeg har brændt for at komme i mål og udvikle nogle fede projekter i samarbejde mine studiekammerater. Det er også afspejlet i mine karaktere.
-
             </div>
-            <div>
-                <a href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" class="icon" /></a>
-                <a href="https://github.com/jonasq8"><img src="assets/github-logo.png" class="icon" /></a>
-                <a href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png" class="icon" /></a>
+            
+            <div class="flex flex-row pb-10">
+                <div class="w-10">
+                    <a class="w-10" href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" /></a>
+                </div>
+                <div class="w-10">
+                    <a class="text-center"href="https://github.com/jonasq8"><img src="assets/github-logo.png"  /></a>
+                </div>
+                <div class="w-10">
+                    <a class="text-center"href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png"  /></a>
+                </div>
             </div>
         </div>
-        <div class="ProfilPictureDiv">  <img src="assets/Billede-clear1.png" class="Picture" alt="profil Picture" style="background-color:#7CC0EB;"> </div>
+        <div class="w-full flex justify-center items-center xl:pb-10 p-10 ">  <img src="assets/Billede-clear1.png" class="Picture" alt="profil Picture" style="background-color:#7CC0EB;" > </div>
     </div>
+    
+    <div class="flex-col xl:flex xl:flex-row md:p-80 bg-blue" >
+        <app-gallery class="w-full flex justify-center items-center xl:pb-10 p-10 " [Picture]="'assets/gs-udklip.png'" [PictureText]="'Et projektsamarbejde med virksomheden Treat'" > </app-gallery>
 
-
-
-   
-    <div class="flex-container-projects-right" >
-        <div class="ProfilPictureDiv">  <img src="assets/gs-udklip.png" class="Picture" alt="profil Picture"> </div>
-        <div class="TextBoxFlexBox">
-            <h1> Afsluttende projekt </h1>
-            <div class="TextBox">
+        <!-- <div class="w-full flex justify-center items-center pt-10 ">  <img src="assets/gs-udklip.png" class="w-64 h-64" alt="profil Picture"> </div> -->
+        <div class="flex flex-col items-center xl:w-2/3">
+            <h1 class="text-center p-6 text-xl font-medium text-black "> Afsluttende projekt </h1>
+            <div class="p-6 text-center xl:w-2/3 xl:text-start">
                 Projektet gik ud på at genfortolke et eksisterende beslutningsstøttende Java-system til en løsning, som i fremtiden kunne distribueres til samtlige hospitalers intensivafdelinger. Systemets opgave var at rådgive læger og sygeplejersker vedrørende insulin og ernæring til kritisk syge patienter. Mit ansvarsområde var at analysere den underliggende algoritme og genfortolke den i C#. Det eksisterende system var skræddersyet til et pilotforsøg i Genève og var en tung desktopklient. Derfor bestod arbejdet hovedsageligt i at genfortolke logikken i en webbaseret kontekst, som var ønsket af Treat Systemets A/S. Algoritmen var kompleks og baseret på 10 års forskning. Dog lykkedes det for min projektgruppe og mig at skabe et system, som kunne modtage patientdata, insulinmængde og ernæring og give en forudsigelse, som kunne understøtte behandlingen. Desuden afsluttede vi eksamen med et 10-tal.
             </div>
-            <div>
-                <a href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" class="icon" /></a>
-                <a href="https://github.com/jonasq8"><img src="assets/github-logo.png" class="icon" /></a>
-                <a href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png" class="icon" /></a>
+            <div class="flex flex-row pb-10">
+                <div class="w-10">
+                    <a class="w-10" href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" /></a>
+                </div>
+                <div class="w-10">
+                    <a class="text-center"href="https://github.com/jonasq8"><img src="assets/github-logo.png"  /></a>
+                </div>
+                <div class="w-10">
+                    <a class="text-center"href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png"  /></a>
+                </div>
             </div>
         </div>
     </div>
 
-
-
-
-    <div class="flex-container-projects">
-      
-        <div class="TextBoxFlexBox">
-            <h1> 4 semester projekt </h1>
-            <div class="TextBox">
+    <div class="flex-col xl:flex xl:flex-row md:m-52">
+        <div class="flex flex-col items-center xl:w-2/3">
+            <h1 class="text-center p-6 text-xl font-medium text-black xl:text-start"> 4 semester projekt </h1>
+            <div class="p-6 text-center xl:text-start xl:w-2/3">
                 I et projektsamarbejde med virksomheden Judex udviklede min projektgruppe og jeg en Nerve Signal Generator, et teknologisk apparat designet til at efterligne karakteristikaene af et nervesignal.
                 Programmet blev udviklet på en Raspberry Pi, der opsætter et adgangspunkt, så man kan konfigurere og tilslutte netværk, før man fysisk kobler det til elektrodiagnostisk hardware for at lave manuelle tests på den tilknyttede elektrodiagnostiske software.
                 Generatoren gav brugerne mulighed for at modulere intensiteten af nervesignalet, introducere tidsmæssige forsinkelser og inkorporere hvid støj, hvilket muliggjorde en nuanceret udforskning af signaldynamik.
                 Brugergrænsefladen blev konstrueret ved hjælp af en kombination af Python til backend-funktionalitet, JavaScript til dynamisk interaktivitet, HTML/CSS til præsentation og en SQLite-database.
                 De genererede nervesignaler blev visualiseret og manipuleret gennem et JavaScript-baseret diagram, hvilket faciliterede brugerinteraktion og tilpasning gennem grafisk manipulation af datapunkter inden for diagrammets grænseflade.
             </div>
-            <div>
-                <a href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" class="icon" /></a>
-                <a href="https://github.com/jonasq8"><img src="assets/github-logo.png" class="icon" /></a>
-                <a href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png" class="icon" /></a>
+            <div class="flex flex-row pb-10">
+                <div class="w-10">
+                    <a class="w-10" href="https://www.facebook.com/jonasq8"><img src="assets/Facebook.png" /></a>
+                </div>
+                <div class="w-10">
+                    <a class="text-center"href="https://github.com/jonasq8"><img src="assets/github-logo.png"  /></a>
+                </div>
+                <div class="w-10">
+                    <a class="text-center"href="https://www.linkedin.com/in/jonasq8"><img src="assets/linkedin.png"  /></a>
+                </div>
             </div>
         </div>
-        <div class="ProfilPictureDiv">  <img src="assets/nsg.png" class="Picture" alt="profil Picture"> </div>
+        <app-gallery class="w-full flex justify-center items-center p-10 xl:pb-10" [Picture]="'assets/nsg.png'" [PictureText]="'I et projektsamarbejde med virksomheden Judex udviklede min projektgruppe'"> </app-gallery>
+        <!-- <div class="w-full flex justify-center items-center pb-10 ">  <img src="assets/nsg.png" class="w-full" alt=""> </div> -->
     </div>
-
-
 </div>
 

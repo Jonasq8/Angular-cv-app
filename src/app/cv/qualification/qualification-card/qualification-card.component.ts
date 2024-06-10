@@ -8,7 +8,7 @@ import { Qualification } from '../../../utils/models/Qualification';
   styleUrl: './qualification-card.component.css'
 })
 export class QualificationCardComponent implements OnInit {
-  @Input() public qualifiation?: Qualification;
+  @Input() public qualifiation!: Qualification;
   public stars : string = ""
 
 

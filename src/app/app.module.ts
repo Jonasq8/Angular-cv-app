@@ -14,7 +14,6 @@ import { HomeComponent } from './home/home.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-import { TruncatePipe } from './utils/pipe/truncate.pipe';
 
 
 @NgModule({
@@ -22,9 +21,6 @@ import { TruncatePipe } from './utils/pipe/truncate.pipe';
     AppComponent,
     HomeComponent,
     ToolbarComponent,
-    TruncatePipe,
-   
-    
   ],
   imports: [
     BrowserModule,

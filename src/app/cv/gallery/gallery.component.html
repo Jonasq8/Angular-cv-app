@@ -1,6 +1,6 @@
-<div class="gallery">
-    <div class="image-container" *ngFor="let image of images" (click)="openModal(image)">
-        <img [src]="image.src" [alt]="image.alt" class="thumbnail" width="200px" height="200px">
+<div >
+    <div  *ngFor="let image of images" (click)="openModal(image)">
+        <img [src]="image.src" [alt]="image.alt" class="thumbnail" >
     </div>
 </div>
 

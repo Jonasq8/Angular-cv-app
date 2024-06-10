@@ -20,6 +20,7 @@ export class CvComponent implements OnInit {
       //Breakpoints.Small,
        
       Breakpoints.Handset,
+    
     ])
       .subscribe(result => {
 

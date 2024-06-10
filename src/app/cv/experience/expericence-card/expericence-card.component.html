@@ -19,19 +19,38 @@
     </mat-card-content>
 </mat-card> -->
 
-
-
-    <div class="colorBox" *ngIf="Expericence">
+<div class="rounded-xl" *ngIf="!isMobile; else mobileVersion" > 
+    <div class="colorBox" >
         <h1 class="expericenceHeader">{{Expericence.title}} </h1>
         <div class="expericence-card-text">
 
             <div>
-                <app-gallery [Picture]="Expericence.picture" [PictureText]="Expericence.text"> </app-gallery>
+                <!-- <app-gallery [Picture]="Expericence.picture" [PictureText]="Expericence.text"> </app-gallery> -->
             </div>
             <div class="textField">
-                {{Expericence.text | truncate:20}}
+                {{Expericence.text}}
             </div>
         </div>
 
     </div>
+</div>
 
+<ng-template #mobileVersion>
+    <div class=" ">
+        <div class="flex justify-center items-center  text-center ">
+            <h1 class="text-center text-xl font-medium text-black w-3/4 ">
+                {{Expericence.title}}
+            </h1>
+        </div>
+        <div class="experience-card-text mt-4">
+            <div class="flex justify-center mb-4">
+                 <!-- <app-gallery class="w-2/4" [Picture]="Expericence.picture" [PictureText]="Expericence.text"></app-gallery>  -->
+            </div>
+            <div class="flex justify-center items-center  text-center text-gray-700 ">
+                <div class="text-center w-3/4"> 
+                    {{Expericence.text }}
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

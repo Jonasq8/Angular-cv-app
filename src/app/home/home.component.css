@@ -1,50 +1,12 @@
-.flex-container {
-  align-self: center;
-  display: flex;
-  text-align: center;
-  padding:10%;
-}
-.flex-vertical {
-  display: flex;
-  flex-direction: column;
-}
-.spacer{
-    height:200px;
-}
-.TextBoxFlexBox {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-self: center;
-}
-.TextBox {
-  padding: 5%;
-/*  outline: auto;*/
+/* .flex-container {
+  
   margin: 5%;
-}
-.ProfilPictureDiv {
-  align-self: center;
-  width: 75%;
-}
-.gitpic {
-  width: 5%;
-}
-.icon {
-  width: 40px;
-  margin: 5px;
-}
-.flex-container-projects {
-  align-self: center;
-  display: flex;
-  text-align: center;
-  /*  outline: auto;*/
-  padding: 10%
-}
+
 .flex-container-projects-right {
   align-self: center;
   display: flex;
   text-align: center;
-  /*  outline: auto;*/
+  /*  outline: auto;
   padding: 10%;
   background-color:#7CC0EB;
 }
@@ -72,7 +34,7 @@
   }
   .TextBox {
     padding: 0%;
-    /*  outline: auto;*/
+    /*  outline: auto;
     margin: 0%;
   }
   .TextBoxFlexBox {
@@ -106,7 +68,7 @@
 
   .TextBox {
     padding: 0%;
-    /*  outline: auto;*/
+    /*  outline: auto;
     margin: 0%;
   }
 
@@ -129,4 +91,4 @@
 
 
 
-
+ */

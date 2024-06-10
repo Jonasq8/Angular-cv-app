@@ -17,6 +17,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CvComponent } from './cv.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AppComponent } from '../app.component';
+import { TruncatePipe } from '../utils/pipe/truncate.pipe';
+import { MatIcon } from '@angular/material/icon';
 
 
 
@@ -33,6 +36,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     ProfileIntroComponent,
     CvComponent,
     GalleryComponent,
+    TruncatePipe,
     
 
   ],
@@ -42,6 +46,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    MatIcon,
+    
     
  
   ],
@@ -51,7 +57,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     QualificationComponent,
     ExpericenceCardComponent,
     ProfileIntroComponent,
-    
+    TruncatePipe,
+    GalleryComponent,
   ]
 })
 export class CvModule { }

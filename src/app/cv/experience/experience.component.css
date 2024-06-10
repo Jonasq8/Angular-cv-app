@@ -2,3 +2,43 @@
   margin: 10px;
   background-color: black;
 }
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db;
+}
+
+.bg-blue-600 {
+  background-color: #7CC0EB;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
